@@ -51,11 +51,19 @@ section {
   flex-wrap: wrap;
 }
 
-.skills-list li {
-  background-color: #ddd;
-  padding: 8px 12px;
-  border-radius: 5px;
+..skills-list li {
+  background-color: #3b3f4e; 
+  color: #f0f0f0; 
+  padding: 8px 14px;
+  border-radius: 6px;
   list-style: none;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3); 
+  transition: transform 0.2s ease;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05); /* حركة خفيفة عند المرور */
 }
 
 footer {
