@@ -121,3 +121,42 @@ footer {
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   border: 3px solid #6ab0f3;
 }
+/* للموبايل */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 30px 10px;
+    margin: 10px 0;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  h1, h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+}
