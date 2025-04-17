@@ -50,7 +50,13 @@ section {
   gap: 10px;
   flex-wrap: wrap;
 }
-
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 ..skills-list li {
   background-color: #3b3f4e; 
   color: #f0f0f0; 
@@ -63,7 +69,7 @@ section {
 }
 
 .skills-list li:hover {
-  transform: scale(1.05); /* حركة خفيفة عند المرور */
+  transform: scale(1.05); 
 }
 
 footer {
