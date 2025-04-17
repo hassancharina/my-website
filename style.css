@@ -112,3 +112,12 @@ footer {
   color: #6ab0f3;
 }
 }
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  border: 3px solid #6ab0f3;
+}
