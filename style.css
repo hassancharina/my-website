@@ -105,4 +105,8 @@ footer {
 
 #contact a:hover {
   text-decoration: underline;
+  #contact i {
+  margin-right: 8px;
+  color: #6ab0f3;
+}
 }
