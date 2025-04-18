@@ -17,3 +17,12 @@ toTopBtn.onclick = function () {
     behavior: "smooth"
   });
 };
+// عرض التاريخ والوقت الحالي
+function updateDateTime() {
+  const now = new Date();
+  const dateTimeString = now.toLocaleString();
+  document.getElementById("date-time").textContent = `Current date and time: ${dateTimeString}`;
+}
+
+// شغّلها مباشرة عند تحميل الصفحة
+updateDateTime();
