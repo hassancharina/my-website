@@ -283,12 +283,41 @@ footer {
 }
 
   .hero-fullscreen {
-    flex-direction: column;
-    text-align: center;
-  }
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #000000, #0d1117);
+  color: white;
+}
 
-  .about-image img {
-    width: 120px;
-    height: 120px;
+.hero-inner h1 {
+  font-size: 54px;
+  font-weight: 700;
+  color: #6ab0f3;
+  margin-bottom: 20px;
+}
+
+.hero-inner h2 {
+  font-size: 26px;
+  color: #ccc;
+  min-height: 32px;
+}
+
+.scroll-indicator {
+  margin-top: 40px;
+  font-size: 24px;
+  color: #6ab0f3;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(10px);
+  }
+}
 }
