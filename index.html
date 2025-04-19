@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hassan Charina | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="Hassan Charina's personal portfolio website. Computer engineering student in Germany with a passion for web development, design, and technology.">
@@ -18,7 +19,7 @@
   <meta property="og:image" content="https://hassansharina.github.io/profile.jpg">
 
   <!-- Styles & Fonts -->
- <link rel="stylesheet" href="style.css?v=2" />
+ <link rel="stylesheet" href="style.css?v=2" /> 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -54,51 +55,134 @@
     </div>
     <div class="about-text">
       <h2>About Me</h2>
+      <p class="tagline">Passionate. Focused. Always learning.</p>
       <p>I'm Hassan Charina, a 24-year-old computer engineering student based in Germany.</p>
       <p>I love exploring tech, building clean and functional websites, and constantly improving myself.</p>
-      <p>Outside of coding, you'll find me either working at the café, learning something new, or enjoying a good gym session.</p>
+      <p>Outside of coding, you'll find me working at the café or lifting weights at the gym.</p>
+      <a href="#contact" class="about-btn">Let’s Connect</a>
     </div>
   </div>
 </section>
 
   <!-- Experience Section -->
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li>
-        <h3>Waiter - Lüttes</h3>
-        <p>I work part-time as a waiter and sometimes help in the kitchen at a small coffee shop that serves breakfast and homemade cakes.</p>
-      </li>
-    </ul>
-  </section>
+ <section id="experience">
+  <h2>Experience</h2>
+  <div class="timeline">
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li data-aos="zoom-in">Java</li>
-      <li data-aos="zoom-in">HTML</li>
-      <li data-aos="zoom-in">CSS</li>
-      <li data-aos="zoom-in">Python</li>
-    </ul>
-  </section>
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+      <div class="timeline-content">
+        <h3>Website Developer – Personal Portfolio</h3>
+        <p>Designed and built a personal portfolio website using HTML, CSS, and JavaScript to showcase my skills, projects, and professional journey.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+      <div class="timeline-content">
+        <h3>Ongoing Project – Web App (In Progress)</h3>
+        <p>Currently developing a web-based application focused on improving user productivity and planning. Still in development phase.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-cash-register"></i></div>
+      <div class="timeline-content">
+        <h3>Cashier – Burger King, Germany (2 years)</h3>
+        <p>Handled customer transactions, managed the register, and provided friendly service in a fast-paced environment.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-bread-slice"></i></div>
+      <div class="timeline-content">
+        <h3>Baker & Sales – Löwenbäcker (1 year)</h3>
+        <p>Worked as a baker and sales assistant in a local bakery. Prepared fresh goods and served customers, maintaining quality and friendly service throughout the day.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-music"></i></div>
+      <div class="timeline-content">
+        <h3>Event Assistant – Candlelight Concert (1 year)</h3>
+        <p>Assisted during live candlelight concerts, helping with event setup, guiding guests, and maintaining a peaceful, elegant atmosphere during performances.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-keyboard"></i></div>
+      <div class="timeline-content">
+        <h3>Data Entry Volunteer – Al Nawras, Syria</h3>
+        <p>Volunteered remotely with a Syrian company, assisting with data entry, digital file organization, and document formatting.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- Projects Section -->
-  <section id="projects" data-aos="zoom-in" data-aos-duration="1000">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Shiftly</h3>
-      <p>Shift planning app: Developed a smart scheduling app that generates optimal work shifts based on staff availability, designed for small teams and cafés.</p>
+  <section id="projects">
+  <h2>Projects</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-calendar-check"></i></div>
+      <div class="timeline-content">
+        <h3>Shiftly – Smart Shift Planner</h3>
+        <p>Developed a web-based shift planner for small cafés. It generates optimal work schedules based on staff availability using a clean UI and responsive design.</p>
+      </div>
     </div>
-  </section>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-user-gear"></i></div>
+      <div class="timeline-content">
+        <h3>Personal Portfolio Website</h3>
+        <p>This website! Built with HTML, CSS, and JavaScript to showcase my experience, skills, and personality in a modern, minimal design.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-tools"></i></div>
+      <div class="timeline-content">
+        <h3>Productivity Web App (In Progress)</h3>
+        <p>Currently building a tool to help users plan daily tasks, prioritize goals, and stay focused with a clean and distraction-free interface.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact</h2>
-    <p><i class="fas fa-envelope"></i> hassancharina1@gmail.com</p>
-    <p><i class="fas fa-phone"></i> +49 151 74389376</p>
-    <p><i class="fas fa-map-marker-alt"></i> Brunswick, 38102, Germany</p>
-  </section>
+  <h2>Contact</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-envelope"></i></div>
+      <div class="timeline-content">
+        <h3>Email</h3>
+        <p><a href="mailto:hassancharina1@gmail.com">hassancharina1@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-phone"></i></div>
+      <div class="timeline-content">
+        <h3>Phone</h3>
+        <p><a href="tel:+4915174389376">+49 151 74389376</a></p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div class="timeline-content">
+        <h3>Location</h3>
+        <p>Brunswick, 38102, Germany</p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>
