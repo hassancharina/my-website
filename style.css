@@ -63,7 +63,7 @@ section:hover {
 
 /* Hero Section (Full Screen) */
 .hero-fullscreen {
-  height:75vh;
+  height:60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,6 +265,17 @@ footer {
 @media (max-width: 768px) {
   body {
     padding: 10px;
+    .hero-inner h1 {
+  font-size: 32px;
+}
+
+.hero-inner h2 {
+  font-size: 18px;
+}
+
+.typing-text {
+  font-size: 16px;
+}
   }
 
   nav ul {
@@ -277,8 +288,8 @@ footer {
   }
 
   section {
-    padding: 30px 10px;
-    margin: 10px 0;
+    padding: 20px 10px;
+    margin: 5px 0;
   }
 
   .about-container {
@@ -310,6 +321,35 @@ footer {
     line-height: 1.7;
     margin-bottom: 15px;
   }
+  .hero-fullscreen {
+  height: 50vh;
+  padding: 20px;
+}
+.timeline {
+  padding-left: 0;
+  border-left: none;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.timeline-icon {
+  position: static;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.timeline-content {
+  padding-left: 0;
+}
+#toTopBtn {
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 12px;
+  font-size: 18px;
+}
 }
 .timeline {
   position: relative;
