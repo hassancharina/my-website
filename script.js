@@ -82,14 +82,17 @@ loop();
 // ------------------------------
 // Hide/Show Header on Scroll
 // ------------------------------
-window.addEventListener("DOMContentLoaded", function () {
-  let header = document.querySelector("header");
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("header");
+
+  // متغير لتأكد إنو خبيناه بس مرة
+  let isHidden = false;
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
-      header.style.top = "-80px";
-    } else {
-      header.style.top = "0";
+    // إذا المستخدم نزل أكتر من 100px والهيدر مو مخبى
+    if (window.scrollY > 100 && !isHidden) {
+      header.style.top = "-100px";
+      isHidden = true;
     }
   });
 });
