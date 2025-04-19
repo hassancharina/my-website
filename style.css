@@ -354,20 +354,26 @@ footer {
 }
 .menu-toggle {
   display: block;
-  font-size: 24px;
+  font-size: 28px;
   color: white;
   cursor: pointer;
   padding: 10px;
-  text-align: right;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 #nav-links {
   display: none;
   flex-direction: column;
+  align-items: center;
   background-color: #0d0d0d;
-  position: absolute;
-  top: 60px;
-  left: 0;
   width: 100%;
   padding: 10px 0;
   border-top: 1px solid #444;
