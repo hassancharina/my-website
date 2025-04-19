@@ -1,4 +1,19 @@
 // ------------------------------
+// Hide/Show Header on Scroll
+// ------------------------------
+window.addEventListener("DOMContentLoaded", function () {
+  let header = document.querySelector("header");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      header.style.top = "-80px";
+    } else {
+      header.style.top = "0";
+    }
+  });
+});
+
+// ------------------------------
 // Scroll to Top Button
 // ------------------------------
 const toTopBtn = document.getElementById("toTopBtn");
@@ -79,17 +94,3 @@ function loop() {
 }
 
 loop();
-// ------------------------------
-// Hide/Show Header on Scroll
-// ------------------------------
-window.addEventListener("DOMContentLoaded", function () {
-  let header = document.querySelector("header");
-
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
-      header.style.top = "-80px";
-    } else {
-      header.style.top = "0";
-    }
-  });
-});
