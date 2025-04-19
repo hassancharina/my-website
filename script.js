@@ -82,16 +82,13 @@ loop();
 // ------------------------------
 // Hide/Show Header on Scroll
 // ------------------------------
-let prevScrollPos = window.pageYOffset;
-const header = document.querySelector("header");
-
 window.addEventListener("scroll", function () {
   let currentScrollPos = window.pageYOffset;
 
   if (prevScrollPos > currentScrollPos) {
-    header.style.top = "0"; // رجّع الهيدر
+    header.style.top = "0"; 
   } else {
-    header.style.top = "-80px"; // خبّي الهيدر
+    header.style.top = "-80px";
   }
 
   prevScrollPos = currentScrollPos;
