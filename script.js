@@ -82,17 +82,14 @@ loop();
 // ------------------------------
 // Hide/Show Header on Scroll
 // ------------------------------
-let prevScrollPos = window.pageYOffset;
-const header = document.querySelector("header");
+window.addEventListener("DOMContentLoaded", function () {
+  let header = document.querySelector("header");
 
-window.addEventListener("scroll", function () {
-  let currentScrollPos = window.pageYOffset;
-
-  if (prevScrollPos > currentScrollPos) {
-    header.style.top = "0";
-  } else {
-    header.style.top = "-80px";
-  }
-
-  prevScrollPos = currentScrollPos;
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      header.style.top = "-80px";
+    } else {
+      header.style.top = "0";
+    }
+  });
 });
