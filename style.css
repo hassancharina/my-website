@@ -264,8 +264,10 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   body {
-    padding: 10px;
-    .hero-inner h1 {
+  padding: 10px;
+}
+
+.hero-inner h1 {
   font-size: 32px;
 }
 
@@ -276,7 +278,6 @@ footer {
 .typing-text {
   font-size: 16px;
 }
-  }
 
   nav ul {
     flex-direction: row;
@@ -350,6 +351,35 @@ footer {
   right: 20px;
   padding: 10px 12px;
   font-size: 18px;
+}
+.menu-toggle {
+  display: block;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  text-align: right;
+}
+
+#nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #0d0d0d;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+}
+
+#nav-links.show {
+  display: flex;
+}
+
+#nav-links li {
+  margin: 10px 0;
+  text-align: center;
 }
 }
 .timeline {
