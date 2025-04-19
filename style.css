@@ -20,9 +20,11 @@ body {
 header {
   background-color: #0d0d0d;
   padding: 15px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1000;
+  transition: top 0.3s;
 }
 
 nav ul {
