@@ -1,3 +1,4 @@
+console.log("JavaScript is working!");
 // ------------------------------
 // Scroll to Top Button
 // ------------------------------
@@ -20,20 +21,8 @@ toTopBtn.onclick = function () {
   });
 };
 
-// ------------------------------
-// Date and Time Display
-// ------------------------------
-function updateDateTime() {
-  const now = new Date();
-  const dateTimeString = now.toLocaleString();
-  document.getElementById("date-time").textContent = `Current date and time: ${dateTimeString}`;
-}
-
-// Run it once on load
-updateDateTime();
 
 // Optional: Update every second
-setInterval(updateDateTime, 1000);
 const typingText = document.querySelector(".typing-text");
 const phrases = ["Computer Engineering Student", "Web Developer", "Tech Explorer"];
 let i = 0;
