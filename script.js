@@ -95,3 +95,14 @@ menuToggle.addEventListener("click", () => {
   console.log("menu clicked");
   navLinks.classList.toggle("show");
 });
+// لما المستخدم يكبس على أي رابط من القائمة، سكّر القائمة
+document.querySelectorAll('#nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+  });
+});
+
+// خيار إضافي: لما تنزل بالصفحة، سكّر القائمة كمان
+window.addEventListener('scroll', () => {
+  navLinks.classList.remove('show');
+});
