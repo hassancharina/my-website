@@ -260,6 +260,12 @@ footer {
 #toTopBtn:hover {
   background-color: #999;
 }
+/* القائمة الأساسية */
+#nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -354,12 +360,11 @@ footer {
 }
 .menu-toggle {
   display: block;
-  font-size: 28px;
-  color: white;
+  font-size: 26px;
+  color: #fff;
   cursor: pointer;
-  padding: 10px;
   text-align: center;
-  width: 100%;
+  margin: 10px auto;
 }
 
 .nav-centered {
@@ -370,14 +375,12 @@ footer {
 }
 
 #nav-links {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  background-color: #0d0d0d;
-  width: 100%;
-  padding: 10px 0;
-  border-top: 1px solid #444;
-}
+display: none;
+flex-direction: column; align-items: center;
+gap: 15px;
+padding: 10px 0;
+background-color: #0d0d0d;
+｝
 
 #nav-links.show {
   display: flex;
