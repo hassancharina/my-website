@@ -78,11 +78,14 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
-      // نازل لتحت
+    if (scrollTop <= 0) {
+      // إذا المستخدم بأول الصفحة، خليه ظاهر
+      header.style.top = "0";
+    } else if (scrollTop > lastScrollTop) {
+      // المستخدم عم ينزل لتحت
       header.style.top = "-100px";
     } else {
-      // طالع لفوق
+      // المستخدم عم يطلع لفوق
       header.style.top = "0";
     }
 
