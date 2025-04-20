@@ -376,11 +376,12 @@ footer {
 
 #nav-links {
 display: none;
-flex-direction: column; align-items: center;
+flex-direction: column;
+align-items: center;
 gap: 15px;
 padding: 10px 0;
 background-color: #0d0d0d;
-｝
+}
 
 #nav-links.show {
   display: flex;
