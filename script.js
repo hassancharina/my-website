@@ -71,21 +71,23 @@ loop();
 // ------------------------------
 // Hide/Show Header on Scroll
 // ------------------------------
-let prevScrollPos = window.pageYOffset;
-const header = document.querySelector("header");
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("header");
+  let lastScrollTop = 0;
 
-window.addEventListener("scroll", function () {
-  let currentScrollPos = window.pageYOffset;
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  if (prevScrollPos > currentScrollPos) {
-    // المستخدم طالع لفوق
-    header.style.top = "0";
-  } else {
-    // المستخدم نازل لتحت
-    header.style.top = "-100px";
-  }
+    if (scrollTop > lastScrollTop) {
+      // نازل لتحت
+      header.style.top = "-100px";
+    } else {
+      // طالع لفوق
+      header.style.top = "0";
+    }
 
-  prevScrollPos = currentScrollPos;
+    lastScrollTop = scrollTop;
+  });
 });
 // ------------------------------
 // Burger Menu Toggle
