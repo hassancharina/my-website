@@ -71,19 +71,21 @@ loop();
 // ------------------------------
 // Hide/Show Header on Scroll
 // ------------------------------
-document.addEventListener("DOMContentLoaded", function () {
-  const header = document.querySelector("header");
+let prevScrollPos = window.pageYOffset;
+const header = document.querySelector("header");
 
-  // متغير لتأكد إنو خبيناه بس مرة
-  let isHidden = false;
+window.addEventListener("scroll", function () {
+  let currentScrollPos = window.pageYOffset;
 
-  window.addEventListener("scroll", function () {
-    // إذا المستخدم نزل أكتر من 100px والهيدر مو مخبى
-    if (window.scrollY > 100 && !isHidden) {
-      header.style.top = "-100px";
-      isHidden = true;
-    }
-  });
+  if (prevScrollPos > currentScrollPos) {
+    // المستخدم طالع لفوق
+    header.style.top = "0";
+  } else {
+    // المستخدم نازل لتحت
+    header.style.top = "-100px";
+  }
+
+  prevScrollPos = currentScrollPos;
 });
 // ------------------------------
 // Burger Menu Toggle
