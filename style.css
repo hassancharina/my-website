@@ -430,3 +430,21 @@ background-color: #0d0d0d;
   font-size: 17px;
   line-height: 1.8;
 }
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  #nav-links {
+    display: flex !important;
+    flex-direction: row !important;
+    position: static !important;
+    background-color: transparent !important;
+    gap: 20px !important;
+  }
+
+  #nav-links li {
+    margin: 0 10px;
+    text-align: left;
+  }
+}
